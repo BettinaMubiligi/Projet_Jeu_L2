@@ -39,11 +39,16 @@ La classe AgentX possède deux attributs qui correspondent à la position de l�
  l’agent (position, fortune) et qui sera utilisée pour afficher l’état de la simulation. Cette classe
  doit contenir une méthode lance(nbEtapes) qui prend un entier naturel en argument et réalise
  le travail suivant :
+ 
  (a) choisir le déplacement de l’agent (avec ou sans force) par un choix aléatoire : une case juste à
  côté de sa position où il se trouve est choisie et l’agent à 30% de chance de faire un déplacement
- avec force (la valeur f est alors générée aléatoirement entre 10 et 100)
+ avec force (la valeur f est alors générée aléatoirement entre 10 et 100).
+ 
  (b) réaliser le déplacement de l’agent;
+ 
  (c) afficher des informations sur ce qui s’est produit durant l’étape;
+ 
  (d) recommencer à l’étape (a) un nombre nbEtapes de fois.
+ 
  La classe TestSimulation contient un main(), dans lequel des essais de simulation sont
  effectués et qui produit un log à l’écran avec les différentes actions réalisées et leurs résultats. 
