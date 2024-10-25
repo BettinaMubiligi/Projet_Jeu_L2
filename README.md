@@ -8,6 +8,7 @@
  — La simulation doit définir au moins 2 types de contenus. Les joyaux et les gardiens peuvent
  donner lieu à plusieurs classes selon des propriétés que vous voudrez leur donner, c’est à vous de
  choisir ce que vous souhaitez ajouter.
+ 
 La classe AgentX possède deux attributs qui correspondent à la position de l’agent
  sur le terrain (numéros de ligne et de colonne), ainsi qu’un sac de joyaux qui est vide au départ.
  Remarque : les agents ne sont pas placés dans la grille, ils parcourent la grille en se déplaçant.
@@ -15,6 +16,7 @@ La classe AgentX possède deux attributs qui correspondent à la position de l�
  ynew) si le déplacement est possible, sinon une exception DeplacementIncorrectException
  doit être levée. Il est nécessaire de définir vous-même cette exception. Une fois que l’agent
  arrive dans une case :
+ 
  — si la case où il arrive contient un joyau, il le ramasse (le joyaux est donc retiré de la grille
  et il le met dans son sac à joyaux.
  — si la case est occupée par un gardien, il perd tous les joyaux de son sac (qui est donc vidé).
@@ -22,8 +24,7 @@ La classe AgentX possède deux attributs qui correspondent à la position de l�
  (xnew, ynew) si le déplacement est possible sinon une exception DeplacementIncorrectException
  doit être levé. Le troisième argument est un entier f (la force) qui est utilisé de la façon décrite
  ci-dessous. Une fois que l’agent arrive dans une case :
-LU2IN002-2023oct– TME 11
- Sorbonne Université– page 2/4
+ 
  — si la case où il arrive contient un joyau, il le ramasse.
  — si la case est occupée par un gardien, si son nombre de point de vie est inférieur ou égal
  à f, alors le gardien est retiré de la grille. Par contre, si le gardien possède un nombre de
