@@ -19,18 +19,23 @@ La classe AgentX possède deux attributs qui correspondent à la position de l�
  
  — si la case où il arrive contient un joyau, il le ramasse (le joyaux est donc retiré de la grille
  et il le met dans son sac à joyaux.
+ 
  — si la case est occupée par un gardien, il perd tous les joyaux de son sac (qui est donc vidé).
+ 
  — seDeplacer(xnew,ynew,f)  change la position de l’agent courant sur le terrain et le place en
  (xnew, ynew) si le déplacement est possible sinon une exception DeplacementIncorrectException
  doit être levé. Le troisième argument est un entier f (la force) qui est utilisé de la façon décrite
  ci-dessous. Une fois que l’agent arrive dans une case :
  
  — si la case où il arrive contient un joyau, il le ramasse.
+ 
  — si la case est occupée par un gardien, si son nombre de point de vie est inférieur ou égal
  à f, alors le gardien est retiré de la grille. Par contre, si le gardien possède un nombre de
  points de vie strictement supérieur à f alors l’agent perd tous les joyaux de son sac et le
  gardien voit son nombre de points de vie baisser de f points.
+ 
  — fortune()  donne la valeur en pièces d’or du sac de joyaux de l’agent.
+ 
  — contenuSac()  donne l’ensemble des joyaux contenus dans son sac.
 
  La classe Simulation contient un agent, une grille, et un tableau de contenus. Cette
